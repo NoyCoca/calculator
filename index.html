@@ -10,35 +10,37 @@
 </head>
 
 <body>
-    <div id="printNumber"></div>
-    <table id ="table">
+    <div id="printNumber">
+        <div id="printCalc"></div>
+    </div>
+    <table id="table">
         <tr>
-            <td><input type="button" value="+" onclick="oprator(event)"></td>
-            <td><input type="button" value="-" onclick="oprator(event)"></td>
-            <td><input type="button" value="/" onclick="oprator(event)"></td>
-            <td><input type="button" value="*" onclick="oprator(event)"></td>
+            <td class="opp"><input type="button" value="+" onclick="oprator(event)"></td>
+            <td class="opp"><input type="button" value="-" onclick="oprator(event)"></td>
+            <td class="opp"><input type="button" value="/" onclick="oprator(event)"></td>
+            <td class="opp"><input type="button" value="*" onclick="oprator(event)"></td>
 
         </tr>
         <tr>
-            <td><input type="button" value="9" onclick="number1F(event)"></td>
-            <td><input type="button" value="8" onclick="number1F(event)"></td>
-            <td><input type="button" value="7" onclick="number1F(event)"></td>
-            <td><input type="button" value="6"  onclick="number1F(event)"></td>
+            <td class="number"><input type="button" value="9" onclick="number1F(event)"></td>
+            <td class="number"><input type="button" value="8" onclick="number1F(event)"></td>
+            <td class="number"><input type="button" value="7" onclick="number1F(event)"></td>
+            <td class="number"><input type="button" value="6" onclick="number1F(event)"></td>
         </tr>
         <tr>
-            <td><input type="button" value="5"  onclick="number1F(event)"></td>
-            <td><input type="button" value="4"  onclick="number1F(event)"></td>
-            <td><input type="button" value="3"  onclick="number1F(event)"></td>
-            <td><input type="button" value="2"  onclick="number1F(event)"></td>
+            <td class="number"><input type="button" value="5" onclick="number1F(event)"></td>
+            <td class="number"><input type="button" value="4" onclick="number1F(event)"></td>
+            <td class="number"><input type="button" value="3" onclick="number1F(event)"></td>
+            <td class="number"><input type="button" value="2" onclick="number1F(event)"></td>
         </tr>
         <tr>
-            <td><input type="button" value="1"  onclick="number1F(event)"></td>
-            <td><input type="button" value="0"  onclick="number1F(event)"></td>
-            <td><input type="button" value="C" onclick="Deletion()"></td>
-            <td><input type="button" value="." onclick="number1F(event)"></td>
+            <td class="number"><input type="button" value="1" onclick="number1F(event)"></td>
+            <td class="number"><input type="button" value="0" onclick="number1F(event)"></td>
+            <td class="number"><input type="button" value="." onclick="number1F(event)"></td>
+            <td id="c"><input type="button" value="C" onclick="Deletion()"></td>
         </tr>
-        <tr >
-            <td id="equalbth"><input  type="button" value="=" onclick="equal()"></td>
+        <tr>
+            <td><input id="equalbth" type="button" value="=" onclick="equal()"></td>
         </tr>
     </table>
     <script src="mainv2.js"></script>

@@ -2,42 +2,42 @@ let number1;
 let Cop;
 let sum;
 function number1F(event) {
-    if(printNumber.innerHTML == "/" ||printNumber.innerHTML == "+" || printNumber.innerHTML == "-" || printNumber.innerHTML == "*"){
-        printNumber.innerHTML =""
+    if(printCalc.innerHTML == "/" ||printCalc.innerHTML == "+" || printCalc.innerHTML == "-" || printCalc.innerHTML == "*"){
+        printCalc.innerHTML =""
     }
     if(sum){
         sum = 0;
-        printNumber.innerHTML = ""
+        printCalc.innerHTML = ""
     }
 
-    printNumber.innerHTML += event.target.value; 
+    printCalc.innerHTML += event.target.value; 
 }
 
 function oprator(event) {
-    number1 = printNumber.innerHTML;
-    printNumber.innerHTML = event.target.value;
-    Cop = printNumber.innerHTML;
+    number1 = printCalc.innerHTML;
+    printCalc.innerHTML = event.target.value;
+    Cop = printCalc.innerHTML;
 
 }
 function equal() {
     
     if(Cop == "/"){
-        sum = Number(number1) / Number(printNumber.innerHTML);
+        sum = Number(number1) / Number(printCalc.innerHTML);
     }
     if(Cop == "*"){
-        sum = Number(number1) * Number(printNumber.innerHTML);
+        sum = Number(number1) * Number(printCalc.innerHTML);
     }
     if(Cop == "+"){
-        sum = Number(number1) + Number(printNumber.innerHTML);
+        sum = Number(number1) + Number(printCalc.innerHTML);
     }
     if(Cop == "-"){
-        sum = Number(number1) - Number(printNumber.innerHTML);
+        sum = Number(number1) - Number(printCalc.innerHTML);
     }
     
-    printNumber.innerHTML = Number(sum);
+    printCalc.innerHTML = Number(sum);
 }
 
 function Deletion() {
     number1 = "";
-    printNumber.innerHTML = "";
+    printCalc.innerHTML = "";
 }

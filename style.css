@@ -1,33 +1,54 @@
-/* table, tr {
-    border: 1px solid black;
-  }
-  table{
-      height: 50vh;
-      width: 20%;
-} */
+
 #printNumber{
   background-color: black;
   color: white;
-  width: 300px;
-  height: 50px;
+  width: 314px;
+  height: 80px;
   font-size: 50px;
-  margin-bottom: 20px;
+  text-align: center;
+  
 
+}
+#table{
+  border: black 2px solid;
+  
 }
 table tr{
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
-
-td input{
-  width: 70px;
+.opp input{
+  width: 75px;
   height: 70px;
-  background-color: cadetblue;
+  background-color: rgb(219, 152, 28);
+  font-size: 30px;
 }
+.number input{
+  width: 75px;
+  height: 70px;
+  background-color: rgb(230, 230, 209);
+  font-size: 30px;
+}
+#c input{
+  width: 75px;
+  height: 70px;
+  background-color:rgb(243, 228, 177);
+  font-size: 30px;
+}
+#equalbth{
+  width: 305px;
+  height: 60px;
+  background-color:rgb(231, 186, 103);
+  font-size: 30px;
+}
+
 td input:hover{
-  background-color: rgb(133, 175, 177);
+  background-color: rgb(236, 240, 198);
 }
-#table{
-display: flex;
+#equalbth:hover{
+  background-color: rgb(236, 240, 198);
 }
+
+
+
