@@ -10,15 +10,17 @@
 </head>
 
 <body>
-    <div id="printNumber">
+    <div id="printNumber"></div>
         <div id="printCalc"></div>
-    </div>
+    
     <table id="table">
         <tr>
             <td class="opp"><input type="button" value="+" onclick="oprator(event)"></td>
             <td class="opp"><input type="button" value="-" onclick="oprator(event)"></td>
             <td class="opp"><input type="button" value="/" onclick="oprator(event)"></td>
             <td class="opp"><input type="button" value="*" onclick="oprator(event)"></td>
+            <td class="opp" ><input  type="button" value=">>" onclick="DeletOneNumber()"></td>
+
 
         </tr>
         <tr>
@@ -41,6 +43,7 @@
         </tr>
         <tr>
             <td><input id="equalbth" type="button" value="=" onclick="equal()"></td>
+            
         </tr>
     </table>
     <script src="mainv2.js"></script>

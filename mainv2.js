@@ -1,5 +1,5 @@
 let number1;
-let Cop;
+let opertor;
 let sum;
 function number1F(event) {
     if(printCalc.innerHTML == "/" ||printCalc.innerHTML == "+" || printCalc.innerHTML == "-" || printCalc.innerHTML == "*"){
@@ -9,35 +9,44 @@ function number1F(event) {
         sum = 0;
         printCalc.innerHTML = ""
     }
-
     printCalc.innerHTML += event.target.value; 
 }
 
 function oprator(event) {
+    
     number1 = printCalc.innerHTML;
     printCalc.innerHTML = event.target.value;
-    Cop = printCalc.innerHTML;
-
+    opertor = printCalc.innerHTML;
+   
 }
 function equal() {
-    
-    if(Cop == "/"){
+
+    if(opertor == "/"){
         sum = Number(number1) / Number(printCalc.innerHTML);
     }
-    if(Cop == "*"){
+    if(opertor == "*"){
         sum = Number(number1) * Number(printCalc.innerHTML);
     }
-    if(Cop == "+"){
+    if(opertor == "+"){
         sum = Number(number1) + Number(printCalc.innerHTML);
     }
-    if(Cop == "-"){
+    if(opertor == "-"){
         sum = Number(number1) - Number(printCalc.innerHTML);
     }
-    
+
+
     printCalc.innerHTML = Number(sum);
+
 }
 
 function Deletion() {
     number1 = "";
     printCalc.innerHTML = "";
+}
+let content;
+let contentLength;
+function DeletOneNumber() {
+    content = printCalc.innerHTML;
+    contentLength = content.length;
+    printCalc.innerHTML = printCalc.innerHTML.substr(0, contentLength-1)
 }

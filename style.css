@@ -1,12 +1,17 @@
 
-#printNumber{
+#printCalc{
   background-color: black;
   color: white;
   width: 314px;
   height: 80px;
   font-size: 50px;
   text-align: center;
-  
+}
+#printNumber{
+  background-color: black;
+  color: white;
+  width: 314px;
+  font-size: 30px;
 
 }
 #table{
@@ -19,7 +24,7 @@ table tr{
   justify-content: center;
 }
 .opp input{
-  width: 75px;
+  width: 59.5px;
   height: 70px;
   background-color: rgb(219, 152, 28);
   font-size: 30px;
