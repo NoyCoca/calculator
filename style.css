@@ -1,0 +1,33 @@
+/* table, tr {
+    border: 1px solid black;
+  }
+  table{
+      height: 50vh;
+      width: 20%;
+} */
+#printNumber{
+  background-color: black;
+  color: white;
+  width: 300px;
+  height: 50px;
+  font-size: 50px;
+  margin-bottom: 20px;
+
+}
+table tr{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+td input{
+  width: 70px;
+  height: 70px;
+  background-color: cadetblue;
+}
+td input:hover{
+  background-color: rgb(133, 175, 177);
+}
+#table{
+display: flex;
+}
